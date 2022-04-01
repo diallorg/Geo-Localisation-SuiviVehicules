@@ -6,9 +6,7 @@ alarmes dans certains cas.
 
 # Participants
 Lemar Axel,
-
 OussamaATTIA,
-
 Mamadou Galle DIALLO
 
 # Document Technique
