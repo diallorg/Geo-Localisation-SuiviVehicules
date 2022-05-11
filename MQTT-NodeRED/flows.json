@@ -38,12 +38,18 @@
         "sessionExpiry": ""
     },
     {
-        "id": "4f2343c40caa8f9b",
-        "type": "ui_tab",
-        "name": "Accueil",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
+        "id": "407b05ba528c502a",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
     },
     {
         "id": "2c6e4e40333881ab",
@@ -143,6 +149,38 @@
         }
     },
     {
+        "id": "4f2343c40caa8f9b",
+        "type": "ui_tab",
+        "name": "Accueil",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bbb23f8b.85e49",
+        "type": "ui_tab",
+        "name": "Demo",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4239ebf0.1cdba4",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7c29f1c.e703f1",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
         "id": "a36dc1b9e8debaa9",
         "type": "ui_group",
         "name": "Localisation",
@@ -154,161 +192,23 @@
         "className": ""
     },
     {
-        "id": "407b05ba528c502a",
-        "type": "tls-config",
-        "name": "",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "",
-        "keyname": "",
-        "caname": "",
-        "servername": "",
-        "verifyservercert": true,
-        "alpnprotocol": ""
-    },
-    {
-        "id": "d2b9a9a5.812e58",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "192.168.1.157",
-        "port": "1883",
-        "clientid": "testmqtt",
-        "usetls": false,
-        "compatmode": true,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "bbb23f8b.85e49",
+        "id": "0a9d42efdf230d4b",
         "type": "ui_tab",
-        "name": "Demo",
+        "name": "Itineraire",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
     },
     {
-        "id": "a6fc5114.af331",
+        "id": "da56cf9db3bcb38f",
         "type": "ui_group",
-        "name": "Discrete",
-        "tab": "bbb23f8b.85e49",
+        "name": "Ajout de points",
+        "tab": "0a9d42efdf230d4b",
         "order": 1,
         "disp": true,
         "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "cf01d076.ec4be",
-        "type": "ui_group",
-        "name": "Analog",
-        "tab": "4239ebf0.1cdba4",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "12e121f8.aa9dbe",
-        "type": "ui_group",
-        "name": "chart",
-        "tab": "bbb23f8b.85e49",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "c44802ed.2f5f7",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "maqiatto.com",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "compatmode": false,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "144e1746.8e6949",
-        "type": "ui_group",
-        "name": "mqtt",
-        "tab": "bbb23f8b.85e49",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "4239ebf0.1cdba4",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "7c3f2d79.c658e4",
-        "type": "mqtt-broker",
-        "name": "local",
-        "broker": "localhost",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "compatmode": true,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "f60a940e.6e4908",
-        "type": "ui_group",
-        "name": "GPS",
-        "tab": "7c29f1c.e703f1",
-        "order": 1,
-        "disp": true,
-        "width": 12,
-        "collapse": false
-    },
-    {
-        "id": "7c29f1c.e703f1",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "8ba82d7d.d6815",
-        "type": "ui_group",
-        "name": "Start/Stop",
-        "tab": "d79763ec.17455",
-        "order": 1,
-        "disp": true,
-        "width": "3"
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "76482b98b8ae334a",
@@ -327,7 +227,8 @@
         "y": 300,
         "wires": [
             [
-                "f21a304828874991"
+                "f21a304828874991",
+                "e4692ac47176f519"
             ]
         ]
     },
@@ -345,8 +246,8 @@
         "correl": "",
         "expiry": "",
         "broker": "43c1369cc772058e",
-        "x": 650,
-        "y": 180,
+        "x": 600,
+        "y": 780,
         "wires": []
     },
     {
@@ -368,19 +269,18 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Oussama/43.151283/7.117253",
+        "payload": "Oussama/43.123456/7.117253",
         "payloadType": "str",
-        "x": 210,
-        "y": 180,
+        "x": 120,
+        "y": 820,
         "wires": [
             [
-                "29d9d702d2b2d10a",
-                "11e16e46dfb5ddf7"
+                "29d9d702d2b2d10a"
             ]
         ]
     },
     {
-        "id": "11e16e46dfb5ddf7",
+        "id": "04a0ede9576ea624",
         "type": "debug",
         "z": "2c252647d5e2d253",
         "name": "",
@@ -388,28 +288,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 500,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "04a0ede9576ea624",
-        "type": "debug",
-        "z": "2c252647d5e2d253",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
         "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 750,
-        "y": 380,
+        "x": 810,
+        "y": 560,
         "wires": []
     },
     {
@@ -423,13 +307,80 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
-        "y": 300,
+        "x": 560,
+        "y": 480,
         "wires": [
             [
                 "04a0ede9576ea624",
                 "139e4403fc3d02cd",
                 "5a82c763e03e2e99"
+            ]
+        ]
+    },
+    {
+        "id": "f766bddc10ee1e72",
+        "type": "template",
+        "z": "2c252647d5e2d253",
+        "name": "Add Map to Dashboard",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src={{{payload.url}}} height=750px width=1000px ></iframe>",
+        "output": "str",
+        "x": 570,
+        "y": 700,
+        "wires": [
+            [
+                "f9e935494075ccca"
+            ]
+        ]
+    },
+    {
+        "id": "3c3c7fb557d8ef41",
+        "type": "inject",
+        "z": "2c252647d5e2d253",
+        "name": "Init WorldMap",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 700,
+        "wires": [
+            [
+                "8d5402c9e1f86e45"
+            ]
+        ]
+    },
+    {
+        "id": "8d5402c9e1f86e45",
+        "type": "function",
+        "z": "2c252647d5e2d253",
+        "name": "Inject /worldmap",
+        "func": "msg.payload =   {\n                url : \"/worldmap\",\n                command : {\n                        layer:\"OSM\",\n                        lat:43.70795211194847,\n                        lon:7.28915290185956,\n                        zoom:5,\n                        map: { name: \"OSM\" },\n                        addtoheatmap:true, \n                        autopan:true\n                        }\n                };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 700,
+        "wires": [
+            [
+                "f766bddc10ee1e72"
             ]
         ]
     },
@@ -460,8 +411,8 @@
         "mapurl": "",
         "mapopt": "",
         "mapwms": false,
-        "x": 820,
-        "y": 300,
+        "x": 880,
+        "y": 480,
         "wires": []
     },
     {
@@ -472,8 +423,8 @@
         "depth": "100",
         "layer": "combined",
         "smooth": false,
-        "x": 680,
-        "y": 260,
+        "x": 740,
+        "y": 440,
         "wires": [
             [
                 "139e4403fc3d02cd"
@@ -495,77 +446,409 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 780,
-        "y": 460,
+        "x": 800,
+        "y": 700,
         "wires": [
             []
         ]
     },
     {
-        "id": "f766bddc10ee1e72",
-        "type": "template",
-        "z": "2c252647d5e2d253",
-        "name": "Add Map to Dashboard",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "<iframe src={{{payload.url}}} height=750px width=1000px ></iframe>",
-        "output": "str",
-        "x": 550,
-        "y": 460,
-        "wires": [
-            [
-                "f9e935494075ccca"
-            ]
-        ]
-    },
-    {
-        "id": "3c3c7fb557d8ef41",
-        "type": "inject",
-        "z": "2c252647d5e2d253",
-        "name": "Init WorldMap",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "",
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 130,
-        "y": 460,
-        "wires": [
-            [
-                "8d5402c9e1f86e45"
-            ]
-        ]
-    },
-    {
-        "id": "8d5402c9e1f86e45",
+        "id": "e4692ac47176f519",
         "type": "function",
         "z": "2c252647d5e2d253",
-        "name": "Inject /worldmap",
-        "func": "msg.payload =   {\n                url : \"/worldmap\",\n                command : {\n                        layer:\"OSM\",\n                        lat:43.70795211194847,\n                        lon:7.28915290185956,\n                        zoom:5,\n                        map: { name: \"OSM\" },\n                        addtoheatmap:true, \n                        autopan:true\n                        }\n                };\nreturn msg;",
+        "name": "",
+        "func": "array = msg.payload.split(\"/\");\nfor (var i = 0; i < array.length; i++) {\n     array[i] = array[i].trim()\n }\n//msg.topic = array[1];  \nmsg.payload = {};\nmsg.payload.name = array[0];\nmsg.payload.lat = array[1];\nmsg.payload.lon = array[2];\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 460,
+        "x": 780,
+        "y": 300,
         "wires": [
             [
-                "f766bddc10ee1e72"
+                "76c06a65993b2677"
             ]
+        ]
+    },
+    {
+        "id": "76c06a65993b2677",
+        "type": "debug",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "d9f6c582cb6e35b2",
+        "type": "http request",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "localhost:3000/itineraire",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 350,
+        "y": 1100,
+        "wires": [
+            [
+                "7f5534d0333655a3"
+            ]
+        ]
+    },
+    {
+        "id": "3adff8bb9e0dcd08",
+        "type": "function",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "func": "const temp = JSON.parse(JSON.stringify(msg.payload));\nfor (const [key, value] of Object.entries(msg.payload)) {\n    if(key.name){\n        return;\n    }\n    msg.payload[key] = {\n        latDiff: msg.payload.loc.lat - value.latitude,\n        lonDiff: msg.payload.loc.lon - value.longitude\n    }\n}\nmsg.payload.positions = temp\ndelete msg.payload.loc\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1020,
+        "wires": [
+            [
+                "125c4cc675f1b115",
+                "36d974f332c3f3a6"
+            ]
+        ]
+    },
+    {
+        "id": "ca31523e2c763f3b",
+        "type": "mqtt in",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "topic": "attiaoussama06@gmail.com/Location/AB123CD",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "43c1369cc772058e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 940,
+        "wires": [
+            [
+                "4f38c05f5f76a577",
+                "d9f6c582cb6e35b2"
+            ]
+        ]
+    },
+    {
+        "id": "4f38c05f5f76a577",
+        "type": "function",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "func": "array = msg.payload.split(\"/\");\nfor (var i = 0; i < array.length; i++) {\n     array[i] = array[i].trim()\n }\nmsg.payload = {}\nmsg.payload.loc = {};\nmsg.payload.loc.name = array[0];\nmsg.payload.loc.lat = parseFloat(array[1]);\nmsg.payload.loc.lon = parseFloat(array[2]);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 940,
+        "wires": [
+            [
+                "86392187435a6ba9"
+            ]
+        ]
+    },
+    {
+        "id": "125c4cc675f1b115",
+        "type": "debug",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "86392187435a6ba9",
+        "type": "join",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 710,
+        "y": 1020,
+        "wires": [
+            [
+                "3adff8bb9e0dcd08"
+            ]
+        ]
+    },
+    {
+        "id": "7f5534d0333655a3",
+        "type": "function",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "func": "msg.payload.points\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1080,
+        "wires": [
+            [
+                "86392187435a6ba9"
+            ]
+        ]
+    },
+    {
+        "id": "36d974f332c3f3a6",
+        "type": "function",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "func": "const low = -0.001;\nconst high = 0.001;\n\n\nif ( msg.payload[1].latDiff > low && msg.payload[1].latDiff < high) {\n  msg.payload = msg.payload.positions[1];\n}\nelse {\n    msg = false\n}\nmsg.topic = \"attiaoussama06@gmail.com/Location/alert\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1100,
+        "wires": [
+            [
+                "f82c088012814018",
+                "81ee4db5d70de41c"
+            ]
+        ]
+    },
+    {
+        "id": "f82c088012814018",
+        "type": "debug",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "81ee4db5d70de41c",
+        "type": "mqtt out",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "topic": "attiaoussama06@gmail.com/Location/alert",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "43c1369cc772058e",
+        "x": 1170,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "c437b96805ad3f63",
+        "type": "mqtt in",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "topic": "attiaoussama06@gmail.com/Location/alert",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "43c1369cc772058e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 1260,
+        "wires": [
+            [
+                "0b3381d13157e7fc"
+            ]
+        ]
+    },
+    {
+        "id": "0b3381d13157e7fc",
+        "type": "debug",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "bb22ba0b7be520c1",
+        "type": "ui_form",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "label": "",
+        "group": "da56cf9db3bcb38f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "latitude",
+                "value": "latitude",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "longitude",
+                "value": "longitude",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "adresse",
+                "value": "adresse",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "client",
+                "value": "client",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "eta",
+                "value": "eta",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "latitude": "",
+            "longitude": "",
+            "adresse": "",
+            "client": "",
+            "eta": ""
+        },
+        "payload": "",
+        "submit": "Envoyer",
+        "cancel": "Annuler",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 390,
+        "y": 1580,
+        "wires": [
+            [
+                "f8e4f305120d8547"
+            ]
+        ]
+    },
+    {
+        "id": "9352be87f0a66c65",
+        "type": "debug",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "f8e4f305120d8547",
+        "type": "http request",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "localhost:3000/itineraire",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 900,
+        "y": 1600,
+        "wires": [
+            [
+                "9352be87f0a66c65"
+            ]
+        ]
+    },
+    {
+        "id": "1e4d9d5bad2459c8",
+        "type": "function",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "func": "msg.headers = {\n    \"Content-Type\": \"application/json\"\n};\n\n\nmsg.payload = {\n    \"address\": \"12345:2\",\n    \"object_type\": \"analogValue\",\n    \"object_instance\": \"302\"\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1800,
+        "wires": [
+            []
         ]
     }
 ]
