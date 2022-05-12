@@ -2,6 +2,14 @@
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 #include <PubSubClient.h>  
+#include <SPI.h>
+#include <MFRC522.h>
+#define SS_PIN D3
+#define RST_PIN D5
+MFRC522 rfid(SS_PIN, RST_PIN); // Instance of the class
+MFRC522::MIFARE_Key key;
+
+byte nuidPICC[4];
 
 //WiFi Connection configuration
 char ssid[] = "iPhone Ouss";     //  le nom du reseau WIFI
@@ -14,12 +22,25 @@ char mqtt_server[] = "broker.emqx.io";  //adresse IP serveur
 WiFiClient espClient;
 PubSubClient MQTTclient(espClient);
 
+char response[50];
+
+char Slat[10];
+char Slon[10];
+
 //Fonctions mqtt
 void MQTTsend() {
-  static int cpt=0;
-  cpt++;
- String reponse="test Mqtt n°"+(String)cpt;
- MQTTclient.publish("attiaoussama06@gmail.com",reponse.c_str());
+
+ String driver="Oussama";
+ long lat=random(43100000,43500000)/1000000;
+ long lon=random(7500000,7800000)/1000000;
+ 
+ dtostrf(lat, 7, 5, Slat);
+ dtostrf(lon, 8, 5, Slon);
+ 
+ sprintf(response, "%s/%s/%s",driver, Slat, Slon);
+ Serial.println(response);
+
+ MQTTclient.publish("attiaoussama06@gmail.com/Location/AB123CD",response);
 }
 
 void MQTTconnect() {
@@ -44,6 +65,9 @@ void MQTTconnect() {
 
 void setup() {
 Serial.begin(115200);
+
+ SPI.begin(); // Init SPI bus
+ rfid.PCD_Init(); // Init MFRC522
   // Conexion WIFI
    WiFi.begin(ssid, password);
    Serial.println("");
