@@ -10,7 +10,7 @@
     {
         "id": "43c1369cc772058e",
         "type": "mqtt-broker",
-        "name": "HiveMQ",
+        "name": "MaQiaTTo",
         "broker": "maqiatto.com",
         "port": "1883",
         "tls": "407b05ba528c502a",
@@ -194,7 +194,7 @@
     {
         "id": "0a9d42efdf230d4b",
         "type": "ui_tab",
-        "name": "Itineraire",
+        "name": "Ajouts",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
@@ -211,6 +211,54 @@
         "className": ""
     },
     {
+        "id": "24ac20c9670536da",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "167f5c20b690be39",
+        "type": "ui_group",
+        "name": "Ajout de véhicules",
+        "tab": "0a9d42efdf230d4b",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f11ff804bc72735d",
+        "type": "ui_group",
+        "name": "Ajout de chauffeurs",
+        "tab": "0a9d42efdf230d4b",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "76482b98b8ae334a",
         "type": "mqtt in",
         "z": "2c252647d5e2d253",
@@ -218,13 +266,13 @@
         "topic": "attiaoussama06@gmail.com/Location/AB123CD",
         "qos": "2",
         "datatype": "auto",
-        "broker": "43c1369cc772058e",
+        "broker": "24ac20c9670536da",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 220,
-        "y": 300,
+        "x": 240,
+        "y": 460,
         "wires": [
             [
                 "f21a304828874991",
@@ -245,9 +293,9 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "43c1369cc772058e",
-        "x": 600,
-        "y": 780,
+        "broker": "24ac20c9670536da",
+        "x": 780,
+        "y": 220,
         "wires": []
     },
     {
@@ -271,30 +319,13 @@
         "topic": "",
         "payload": "Oussama/43.123456/7.117253",
         "payloadType": "str",
-        "x": 120,
-        "y": 820,
+        "x": 300,
+        "y": 260,
         "wires": [
             [
                 "29d9d702d2b2d10a"
             ]
         ]
-    },
-    {
-        "id": "04a0ede9576ea624",
-        "type": "debug",
-        "z": "2c252647d5e2d253",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 810,
-        "y": 560,
-        "wires": []
     },
     {
         "id": "f21a304828874991",
@@ -307,11 +338,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
+        "x": 580,
         "y": 480,
         "wires": [
             [
-                "04a0ede9576ea624",
                 "139e4403fc3d02cd",
                 "5a82c763e03e2e99"
             ]
@@ -328,8 +358,8 @@
         "syntax": "mustache",
         "template": "<iframe src={{{payload.url}}} height=750px width=1000px ></iframe>",
         "output": "str",
-        "x": 570,
-        "y": 700,
+        "x": 690,
+        "y": 320,
         "wires": [
             [
                 "f9e935494075ccca"
@@ -357,8 +387,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 150,
-        "y": 700,
+        "x": 270,
+        "y": 320,
         "wires": [
             [
                 "8d5402c9e1f86e45"
@@ -376,8 +406,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 700,
+        "x": 460,
+        "y": 320,
         "wires": [
             [
                 "f766bddc10ee1e72"
@@ -411,7 +441,7 @@
         "mapurl": "",
         "mapopt": "",
         "mapwms": false,
-        "x": 880,
+        "x": 900,
         "y": 480,
         "wires": []
     },
@@ -423,7 +453,7 @@
         "depth": "100",
         "layer": "combined",
         "smooth": false,
-        "x": 740,
+        "x": 760,
         "y": 440,
         "wires": [
             [
@@ -446,8 +476,8 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 800,
-        "y": 700,
+        "x": 920,
+        "y": 320,
         "wires": [
             []
         ]
@@ -463,29 +493,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 300,
+        "x": 800,
+        "y": 380,
         "wires": [
-            [
-                "76c06a65993b2677"
-            ]
+            []
         ]
-    },
-    {
-        "id": "76c06a65993b2677",
-        "type": "debug",
-        "z": "2c252647d5e2d253",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1030,
-        "y": 300,
-        "wires": []
     },
     {
         "id": "d9f6c582cb6e35b2",
@@ -495,14 +507,14 @@
         "method": "GET",
         "ret": "obj",
         "paytoqs": "body",
-        "url": "localhost:3000/itineraire",
+        "url": "localhost:3001/clients",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 350,
-        "y": 1100,
+        "x": 370,
+        "y": 840,
         "wires": [
             [
                 "7f5534d0333655a3"
@@ -520,11 +532,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 1020,
+        "x": 900,
+        "y": 760,
         "wires": [
             [
-                "125c4cc675f1b115",
                 "36d974f332c3f3a6"
             ]
         ]
@@ -542,8 +553,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 180,
-        "y": 940,
+        "x": 200,
+        "y": 680,
         "wires": [
             [
                 "4f38c05f5f76a577",
@@ -562,30 +573,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
-        "y": 940,
+        "x": 580,
+        "y": 680,
         "wires": [
             [
                 "86392187435a6ba9"
             ]
         ]
-    },
-    {
-        "id": "125c4cc675f1b115",
-        "type": "debug",
-        "z": "2c252647d5e2d253",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1090,
-        "y": 1020,
-        "wires": []
     },
     {
         "id": "86392187435a6ba9",
@@ -607,8 +601,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 710,
-        "y": 1020,
+        "x": 730,
+        "y": 760,
         "wires": [
             [
                 "3adff8bb9e0dcd08"
@@ -626,8 +620,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
-        "y": 1080,
+        "x": 560,
+        "y": 820,
         "wires": [
             [
                 "86392187435a6ba9"
@@ -645,31 +639,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
-        "y": 1100,
+        "x": 1040,
+        "y": 840,
         "wires": [
             [
-                "f82c088012814018",
                 "81ee4db5d70de41c"
             ]
         ]
-    },
-    {
-        "id": "f82c088012814018",
-        "type": "debug",
-        "z": "2c252647d5e2d253",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1240,
-        "y": 1160,
-        "wires": []
     },
     {
         "id": "81ee4db5d70de41c",
@@ -685,8 +661,8 @@
         "correl": "",
         "expiry": "",
         "broker": "43c1369cc772058e",
-        "x": 1170,
-        "y": 1340,
+        "x": 1390,
+        "y": 860,
         "wires": []
     },
     {
@@ -702,30 +678,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 250,
-        "y": 1260,
+        "x": 260,
+        "y": 920,
         "wires": [
-            [
-                "0b3381d13157e7fc"
-            ]
+            []
         ]
-    },
-    {
-        "id": "0b3381d13157e7fc",
-        "type": "debug",
-        "z": "2c252647d5e2d253",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 680,
-        "y": 1280,
-        "wires": []
     },
     {
         "id": "bb22ba0b7be520c1",
@@ -735,8 +692,8 @@
         "label": "",
         "group": "da56cf9db3bcb38f",
         "order": 0,
-        "width": 0,
-        "height": 0,
+        "width": "6",
+        "height": "10",
         "options": [
             {
                 "label": "latitude",
@@ -788,29 +745,13 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 390,
-        "y": 1580,
+        "x": 190,
+        "y": 1060,
         "wires": [
             [
                 "f8e4f305120d8547"
             ]
         ]
-    },
-    {
-        "id": "9352be87f0a66c65",
-        "type": "debug",
-        "z": "2c252647d5e2d253",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1110,
-        "y": 1600,
-        "wires": []
     },
     {
         "id": "f8e4f305120d8547",
@@ -820,33 +761,152 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": "ignore",
-        "url": "localhost:3000/itineraire",
+        "url": "localhost:3001/clients",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 900,
-        "y": 1600,
+        "x": 470,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af1c3307de12d0f4",
+        "type": "ui_form",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "label": "",
+        "group": "167f5c20b690be39",
+        "order": 0,
+        "width": "6",
+        "height": "10",
+        "options": [
+            {
+                "label": "plaque",
+                "value": "plaque",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "VIN",
+                "value": "VIN",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "plaque": "",
+            "VIN": ""
+        },
+        "payload": "",
+        "submit": "Envoyer",
+        "cancel": "Annuler",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 190,
+        "y": 1140,
         "wires": [
             [
-                "9352be87f0a66c65"
+                "9652d90d10d3face"
             ]
         ]
     },
     {
-        "id": "1e4d9d5bad2459c8",
-        "type": "function",
+        "id": "9652d90d10d3face",
+        "type": "http request",
         "z": "2c252647d5e2d253",
         "name": "",
-        "func": "msg.headers = {\n    \"Content-Type\": \"application/json\"\n};\n\n\nmsg.payload = {\n    \"address\": \"12345:2\",\n    \"object_type\": \"analogValue\",\n    \"object_instance\": \"302\"\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 580,
-        "y": 1800,
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "localhost:3001/clients",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 470,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16d3c0e840de7e44",
+        "type": "ui_form",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "label": "",
+        "group": "f11ff804bc72735d",
+        "order": 0,
+        "width": "6",
+        "height": "10",
+        "options": [
+            {
+                "label": "name",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "number",
+                "value": "number",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "adresse",
+                "value": "adresse",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "number": "",
+            "adresse": ""
+        },
+        "payload": "",
+        "submit": "Envoyer",
+        "cancel": "Annuler",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 190,
+        "y": 1220,
+        "wires": [
+            [
+                "d1572ab85cdc73ab"
+            ]
+        ]
+    },
+    {
+        "id": "d1572ab85cdc73ab",
+        "type": "http request",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "localhost:3001/clients",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 470,
+        "y": 1220,
         "wires": [
             []
         ]
