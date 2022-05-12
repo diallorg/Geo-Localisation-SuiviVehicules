@@ -1,0 +1,22 @@
+<html>
+    <h1>Liste des chauffeurs et vehicules:</h1>
+    <div id="teams"></div>
+
+    <script>
+
+    const teamsDiv = document.getElementById('teams');
+    function fetchTeams() {
+        fetch('http://127.0.0.1:8181/chauffeur')
+        .then((response) => {
+            response.json()
+            .then((teams) => {
+                const mmoContent = teams.equipes.map((team) => 
+                    `<div>${team.name} - ${team.id}</div>`
+                ).join('');
+                teamsDiv.innerHTML = mmoContent;            
+            })
+        }).catch(error => console.error);
+    }
+    fetchTeams();
+    </script>
+</html>

@@ -1,0 +1,37 @@
+ [
+
+    {
+        "vehicule_V1": {
+            "immatr":"BA-633-VN",
+            "status": "fonctionnel"        
+        },
+        "vehicule_V2": {
+            "immatr":"AT-833-WN",
+            "status": "non fonctionnel"        
+        },
+        "vehicule_V3": {
+            "immatr":"CA-633-VN",
+            "status": "fonctionnel"        
+        },
+        "vehicule_V4": {
+            "immatr":"FV-633-VN",
+            "status": "fonctionnel"        
+        }
+    }
+
+
+ ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
