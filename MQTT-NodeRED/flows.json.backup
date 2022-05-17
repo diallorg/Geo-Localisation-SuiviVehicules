@@ -1,0 +1,571 @@
+[
+    {
+        "id": "2c252647d5e2d253",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "43c1369cc772058e",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "maqiatto.com",
+        "port": "1883",
+        "tls": "407b05ba528c502a",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4f2343c40caa8f9b",
+        "type": "ui_tab",
+        "name": "Accueil",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2c6e4e40333881ab",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a36dc1b9e8debaa9",
+        "type": "ui_group",
+        "name": "Localisation",
+        "tab": "4f2343c40caa8f9b",
+        "order": 1,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "407b05ba528c502a",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "d2b9a9a5.812e58",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.157",
+        "port": "1883",
+        "clientid": "testmqtt",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "bbb23f8b.85e49",
+        "type": "ui_tab",
+        "name": "Demo",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a6fc5114.af331",
+        "type": "ui_group",
+        "name": "Discrete",
+        "tab": "bbb23f8b.85e49",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "cf01d076.ec4be",
+        "type": "ui_group",
+        "name": "Analog",
+        "tab": "4239ebf0.1cdba4",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "12e121f8.aa9dbe",
+        "type": "ui_group",
+        "name": "chart",
+        "tab": "bbb23f8b.85e49",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c44802ed.2f5f7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "maqiatto.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "144e1746.8e6949",
+        "type": "ui_group",
+        "name": "mqtt",
+        "tab": "bbb23f8b.85e49",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4239ebf0.1cdba4",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7c3f2d79.c658e4",
+        "type": "mqtt-broker",
+        "name": "local",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "f60a940e.6e4908",
+        "type": "ui_group",
+        "name": "GPS",
+        "tab": "7c29f1c.e703f1",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false
+    },
+    {
+        "id": "7c29f1c.e703f1",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8ba82d7d.d6815",
+        "type": "ui_group",
+        "name": "Start/Stop",
+        "tab": "d79763ec.17455",
+        "order": 1,
+        "disp": true,
+        "width": "3"
+    },
+    {
+        "id": "76482b98b8ae334a",
+        "type": "mqtt in",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "topic": "attiaoussama06@gmail.com/Location/AB123CD",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "43c1369cc772058e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "f21a304828874991"
+            ]
+        ]
+    },
+    {
+        "id": "29d9d702d2b2d10a",
+        "type": "mqtt out",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "topic": "attiaoussama06@gmail.com/Location/AB123CD",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "43c1369cc772058e",
+        "x": 650,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "49f37f83c3851e15",
+        "type": "inject",
+        "z": "2c252647d5e2d253",
+        "name": "AB123CD",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Oussama/43.151283/7.117253",
+        "payloadType": "str",
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "29d9d702d2b2d10a",
+                "11e16e46dfb5ddf7"
+            ]
+        ]
+    },
+    {
+        "id": "11e16e46dfb5ddf7",
+        "type": "debug",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "04a0ede9576ea624",
+        "type": "debug",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f21a304828874991",
+        "type": "function",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "func": "array = msg.payload.split(\"/\");\nfor (var i = 0; i < array.length; i++) {\n     array[i] = array[i].trim()\n }\n//msg.topic = array[1];  \nmsg.payload = {};\nmsg.payload.name = array[0];\nmsg.payload.lat = array[1];\nmsg.payload.lon = array[2];\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "04a0ede9576ea624",
+                "139e4403fc3d02cd",
+                "5a82c763e03e2e99"
+            ]
+        ]
+    },
+    {
+        "id": "139e4403fc3d02cd",
+        "type": "worldmap",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "lat": "43.707952",
+        "lon": "7.289153",
+        "zoom": "8",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS,SW",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 820,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "5a82c763e03e2e99",
+        "type": "worldmap-tracks",
+        "z": "2c252647d5e2d253",
+        "name": "",
+        "depth": "100",
+        "layer": "combined",
+        "smooth": false,
+        "x": 680,
+        "y": 260,
+        "wires": [
+            [
+                "139e4403fc3d02cd"
+            ]
+        ]
+    },
+    {
+        "id": "f9e935494075ccca",
+        "type": "ui_template",
+        "z": "2c252647d5e2d253",
+        "group": "a36dc1b9e8debaa9",
+        "name": "Embedded Map",
+        "order": 0,
+        "width": "20",
+        "height": "15",
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f766bddc10ee1e72",
+        "type": "template",
+        "z": "2c252647d5e2d253",
+        "name": "Add Map to Dashboard",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src={{{payload.url}}} height=750px width=1000px ></iframe>",
+        "output": "str",
+        "x": 550,
+        "y": 460,
+        "wires": [
+            [
+                "f9e935494075ccca"
+            ]
+        ]
+    },
+    {
+        "id": "3c3c7fb557d8ef41",
+        "type": "inject",
+        "z": "2c252647d5e2d253",
+        "name": "Init WorldMap",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "8d5402c9e1f86e45"
+            ]
+        ]
+    },
+    {
+        "id": "8d5402c9e1f86e45",
+        "type": "function",
+        "z": "2c252647d5e2d253",
+        "name": "Inject /worldmap",
+        "func": "msg.payload =   {\n                url : \"/worldmap\",\n                command : {\n                        layer:\"OSM\",\n                        lat:43.70795211194847,\n                        lon:7.28915290185956,\n                        zoom:5,\n                        map: { name: \"OSM\" },\n                        addtoheatmap:true, \n                        autopan:true\n                        }\n                };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "f766bddc10ee1e72"
+            ]
+        ]
+    }
+]
